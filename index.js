@@ -22,8 +22,8 @@ app.get('/deploy', async (req, res) => {
         selectedDomain.used = true;
         fs.writeFileSync('./domains.json', JSON.stringify(domains, null, 2));
 
-        // Example GitHub repo to clone and deploy
-        const githubRepoUrl = 'https://github.com/user/example-repo.git';
+        // GitHub repo to clone and deploy
+        const githubRepoUrl = 'https://github.com/Papi99972/v4.git';
         const vercelToken = process.env.VERCEL_TOKEN;
 
         // Deploy the GitHub repo to Vercel under the selected domain
